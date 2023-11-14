@@ -50,5 +50,5 @@ Note, however, that some parts of the code are multi-core, since `tsfresh` uses 
 
 ## Expected run time for each script
 
-* `predictions.py` might take a few hours to run (e.g. 2 to 3 hours, depending on hardware, specifically the processor/CPU).
+* `predictions.py` might take a few hours to run (e.g. 2 to 3 hours, depending on hardware).
 * `submission.py` is immediate.
