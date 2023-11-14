@@ -34,7 +34,7 @@ This code uses:
 
 ## Environment for the code to run
 
-This code runs in an environment with:
+This code runs in an environment containing:
 * python 3.11.6
 * numpy 1.26.1
 * pandas 2.1.1
