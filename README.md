@@ -46,7 +46,7 @@ This code runs in an environment containing:
 
 No special hardware. No accelerators needed (e.g. GPUs).
 
-Note, however, that some parts of the code are multi-core, since `tsfresh` uses Python's `multiprocessing` during feature computation.
+However, some parts of the code are multi-core, since `tsfresh` uses Python's `multiprocessing` during feature computation.
 
 ## Expected run time for each script
 
