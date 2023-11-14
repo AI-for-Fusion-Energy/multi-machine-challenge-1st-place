@@ -29,7 +29,7 @@ Note that, for platform independence, it is better to use `os.path.join()` rathe
 This code uses:
 * [h5py](https://www.h5py.org/) to read HDF files
 * [pandas](https://pandas.pydata.org/) to process CSV files
-* [tsfresh](https://tsfresh.readthedocs.io/) to generate features from time series
+* [tsfresh](https://tsfresh.readthedocs.io/) to compute features from time series
 * [scikit-learn](https://scikit-learn.org/) to implement a logistics regression pipeline.
 
 ## Environment for the code to run
