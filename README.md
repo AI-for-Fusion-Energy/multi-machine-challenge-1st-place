@@ -12,7 +12,7 @@ This code uses [python](https://www.python.org/), [numpy](https://numpy.org/), [
 
 In `predictions.py`, line 77, set `cmod_data_folder` to point to the location of the C-Mod data folder (i.e. path to the `cmod` folder that appears as a result of unzipping `C-Mod data.zip`).
 
-Note that, for platform independence, it is better to use `os.path.join()` rather than explicit forward or backward slashes to build such path.
+Note that, for platform independence, it is better to use `os.path.join()` rather than using explicit forward or backward slashes to build such path.
 
 ## Order in which to run code
 
