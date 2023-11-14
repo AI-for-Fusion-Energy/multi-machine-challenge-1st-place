@@ -3,7 +3,7 @@
 This repository contains a streamlined version of the code that achieved 1st place in the [Multi-Machine Disruption Prediction Challenge for Fusion Energy by ITU](https://zindi.africa/competitions/multi-machine-disruption-prediction-challenge/) competition on [Zindi](https://zindi.africa/).
 
 The code involves two main scripts:
-* `predictions.py` - a script that uses logistic regression to predict whether each pulse is disruptive, based on features extracted from signals, where each signal is used as a separate predictor.
+* `predictions.py` - a script that uses logistic regression to predict whether each pulse is disruptive or not, based on features extracted from signals, where each signal is used as a separate predictor.
 * `submission.py` - a script that creates a submission by averaging the predictions from multiple signals/predictors.
 
 This code uses [python](https://www.python.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [h5py](https://www.h5py.org/), [scikit-learn](https://scikit-learn.org/) and [tsfresh](https://tsfresh.readthedocs.io/).
