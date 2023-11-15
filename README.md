@@ -14,7 +14,7 @@ Download `C-Mod data.zip` from the [competition website](https://zindi.africa/co
 
 In `predictions.py`, line `18`, set `cmod_data_folder` to point to the location of the C-Mod data folder (the `cmod` folder that comes from unzipping `C-Mod data.zip`).
 
-For platform independence, it is better to use `os.path.join()` rather than using explicit forward slashes (`/`) or backward slashes (`\`) to build such path.
+For platform independence, it is better to use `os.path.join()` rather than using forward slashes (`/`) or backward slashes (`\`) to build such path.
 
 ## Order in which to run code
 
