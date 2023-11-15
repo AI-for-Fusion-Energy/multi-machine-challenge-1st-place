@@ -3,7 +3,7 @@ import pandas as pd
 
 # -----------------------------------------------------------------------------
 
-fname = 'predictions.csv'
+fname = 'predictions_cmod.csv'
 print('Reading:', fname)
 predictions = pd.read_csv(fname, index_col=0)
 
