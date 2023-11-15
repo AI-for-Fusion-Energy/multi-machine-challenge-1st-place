@@ -3,7 +3,7 @@
 This repository contains a streamlined version of the code that achieved 1st place in the [Multi-Machine Disruption Prediction Challenge for Fusion Energy by ITU](https://zindi.africa/competitions/multi-machine-disruption-prediction-challenge/) competition on [Zindi](https://zindi.africa/).
 
 The code involves two main scripts:
-* `predictions.py` - a script that uses logistic regression to predict whether each pulse is disruptive or not, based on features extracted from signals, where each signal is used as a separate predictor.
+* `predictions_cmod.py` - a script that uses logistic regression to predict whether each C-Mod shot is disruptive or not, based on features extracted from each signal, and where each signal is used as a separate predictor.
 * `submission.py` - a script that creates a submission by averaging the predictions from multiple signals/predictors.
 
 This code uses [python](https://www.python.org/), [numpy](https://numpy.org/), [pandas](https://pandas.pydata.org/), [h5py](https://www.h5py.org/), [scikit-learn](https://scikit-learn.org/) and [tsfresh](https://tsfresh.readthedocs.io/).
@@ -12,15 +12,15 @@ This code uses [python](https://www.python.org/), [numpy](https://numpy.org/), [
 
 Download `C-Mod data.zip` from the [competition website](https://zindi.africa/competitions/multi-machine-disruption-prediction-challenge/data) and unzip it to some location.
 
-In `predictions.py`, line `18`, set `cmod_data_folder` to point to the location of the C-Mod data folder (the `cmod` folder that comes from unzipping `C-Mod data.zip`).
+In `predictions_cmod.py`, line `18`, set `cmod_data_folder` to point to the location of the C-Mod data folder (the `cmod` folder that comes from unzipping `C-Mod data.zip`).
 
-For platform independence, it is better to use `os.path.join()` rather than using forward slashes (`/`) or backward slashes (`\`) to build such path.
+For platform independence, it is better to use `os.path.join()` rather than using forward slashes (`/`) or backward slashes (`\`) to specify that location.
 
 ## Order in which to run code
 
-1. Run `python predictions.py`.
+1. Run `python predictions_cmod.py`.
 
-   This will generate the output files `coefficients.csv` and `predictions.csv`.
+   This will generate the output files `coefficients_cmod.csv` and `predictions_cmod.csv`.
 
 2. Run `python submission.py`.
 
@@ -52,5 +52,5 @@ However, some parts of the code are multi-core, since `tsfresh` uses Python's `m
 
 ## Expected run time for each script
 
-* `predictions.py` might take a few hours to run (e.g. 2 to 3 hours, depending on hardware)
+* `predictions_cmod.py` might take a few hours to run (e.g. 2 to 3 hours, depending on hardware)
 * `submission.py` is immediate.
