@@ -15,6 +15,10 @@ from sklearn.linear_model import LogisticRegression
 
 # -----------------------------------------------------------------------------
 
+cmod_data_folder = os.path.join('.', 'cmod')
+
+# -----------------------------------------------------------------------------
+
 def get_shot_id(fname):
     return int(os.path.splitext(os.path.split(fname)[-1])[0])
 
@@ -74,10 +78,8 @@ def get_features(X):
 
 if __name__ == '__main__':
 
-    cmod_data_folder = os.path.join('.', 'cmod')
-    print('C-Mod data folder:', cmod_data_folder)
-
-    files = get_files(cmod_data_folder)
+    folder = cmod_data_folder
+    files = get_files(folder)
     data, labels = get_data(files)
 
     train_ids = [shot_id for shot_id in labels if not np.isnan(labels[shot_id])]
