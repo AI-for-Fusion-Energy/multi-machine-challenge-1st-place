@@ -48,9 +48,13 @@ This code runs in an environment containing:
 
 No special hardware. No accelerators needed (e.g. GPUs).
 
-However, some parts of the code are multi-core, since `tsfresh` uses Python's `multiprocessing` during feature computation.
+However, some parts of the code are multi-core, since `tsfresh` uses Python's `multiprocessing` during feature extraction.
 
 ## Expected run time for each script
 
 * `predictions_cmod.py` might take a few hours to run (e.g. 2 to 3 hours, depending on hardware)
 * `submission.py` is immediate.
+
+## Report
+
+To be available soon.
