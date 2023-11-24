@@ -57,4 +57,4 @@ However, some parts of the code are multi-core, since `tsfresh` uses Python's `m
 
 ## Report
 
-The report is available in `REPORT.pdf`.
+The report is available in [REPORT.pdf](REPORT.pdf).
